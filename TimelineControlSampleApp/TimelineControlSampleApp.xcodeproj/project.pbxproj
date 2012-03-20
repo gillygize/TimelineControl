@@ -1,0 +1,316 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C925A9E814E39C01005E1210 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C925A9E714E39C01005E1210 /* UIKit.framework */; };
+		C925A9EA14E39C01005E1210 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C925A9E914E39C01005E1210 /* Foundation.framework */; };
+		C925A9EC14E39C01005E1210 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C925A9EB14E39C01005E1210 /* CoreGraphics.framework */; };
+		C925A9F214E39C01005E1210 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C925A9F014E39C01005E1210 /* InfoPlist.strings */; };
+		C925A9F414E39C01005E1210 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C925A9F314E39C01005E1210 /* main.m */; };
+		C925A9F814E39C01005E1210 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C925A9F714E39C01005E1210 /* AppDelegate.m */; };
+		C925A9FB14E39C01005E1210 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C925A9FA14E39C01005E1210 /* ViewController.m */; };
+		C925A9FE14E39C01005E1210 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = C925A9FC14E39C01005E1210 /* ViewController_iPhone.xib */; };
+		C925AA0114E39C01005E1210 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = C925A9FF14E39C01005E1210 /* ViewController_iPad.xib */; };
+		C925AA0D14E39D5B005E1210 /* libTimeLineControl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C925AA0C14E39D5B005E1210 /* libTimeLineControl.a */; };
+		C925AA2614E3A4C3005E1210 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C925AA2514E3A4C3005E1210 /* AVFoundation.framework */; };
+		C925AA2814E3A576005E1210 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C925AA2714E3A576005E1210 /* CoreMedia.framework */; };
+		C925AA2A14E3A591005E1210 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C925AA2914E3A591005E1210 /* QuartzCore.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C925A9E314E39C01005E1210 /* TimelineControlSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimelineControlSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C925A9E714E39C01005E1210 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C925A9E914E39C01005E1210 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C925A9EB14E39C01005E1210 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C925A9EF14E39C01005E1210 /* TimelineControlSampleApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TimelineControlSampleApp-Info.plist"; sourceTree = "<group>"; };
+		C925A9F114E39C01005E1210 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C925A9F314E39C01005E1210 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C925A9F514E39C01005E1210 /* TimelineControlSampleApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TimelineControlSampleApp-Prefix.pch"; sourceTree = "<group>"; };
+		C925A9F614E39C01005E1210 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C925A9F714E39C01005E1210 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C925A9F914E39C01005E1210 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C925A9FA14E39C01005E1210 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C925A9FD14E39C01005E1210 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
+		C925AA0014E39C01005E1210 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+		C925AA0C14E39D5B005E1210 /* libTimeLineControl.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = libTimeLineControl.a; path = "../TimelineControl/build/Release-iphoneos/libTimeLineControl.a"; sourceTree = "<group>"; };
+		C925AA2514E3A4C3005E1210 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		C925AA2714E3A576005E1210 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		C925AA2914E3A591005E1210 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C925A9E014E39C01005E1210 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C925AA2A14E3A591005E1210 /* QuartzCore.framework in Frameworks */,
+				C925AA2814E3A576005E1210 /* CoreMedia.framework in Frameworks */,
+				C925AA2614E3A4C3005E1210 /* AVFoundation.framework in Frameworks */,
+				C925AA0D14E39D5B005E1210 /* libTimeLineControl.a in Frameworks */,
+				C925A9E814E39C01005E1210 /* UIKit.framework in Frameworks */,
+				C925A9EA14E39C01005E1210 /* Foundation.framework in Frameworks */,
+				C925A9EC14E39C01005E1210 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C925A9D814E39C01005E1210 = {
+			isa = PBXGroup;
+			children = (
+				C925A9ED14E39C01005E1210 /* TimelineControlSampleApp */,
+				C925A9E614E39C01005E1210 /* Frameworks */,
+				C925A9E414E39C01005E1210 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C925A9E414E39C01005E1210 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C925A9E314E39C01005E1210 /* TimelineControlSampleApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C925A9E614E39C01005E1210 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C925AA0C14E39D5B005E1210 /* libTimeLineControl.a */,
+				C925AA2714E3A576005E1210 /* CoreMedia.framework */,
+				C925AA2514E3A4C3005E1210 /* AVFoundation.framework */,
+				C925A9E714E39C01005E1210 /* UIKit.framework */,
+				C925A9E914E39C01005E1210 /* Foundation.framework */,
+				C925A9EB14E39C01005E1210 /* CoreGraphics.framework */,
+				C925AA2914E3A591005E1210 /* QuartzCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C925A9ED14E39C01005E1210 /* TimelineControlSampleApp */ = {
+			isa = PBXGroup;
+			children = (
+				C925A9F614E39C01005E1210 /* AppDelegate.h */,
+				C925A9F714E39C01005E1210 /* AppDelegate.m */,
+				C925A9F914E39C01005E1210 /* ViewController.h */,
+				C925A9FA14E39C01005E1210 /* ViewController.m */,
+				C925A9FC14E39C01005E1210 /* ViewController_iPhone.xib */,
+				C925A9FF14E39C01005E1210 /* ViewController_iPad.xib */,
+				C925A9EE14E39C01005E1210 /* Supporting Files */,
+			);
+			path = TimelineControlSampleApp;
+			sourceTree = "<group>";
+		};
+		C925A9EE14E39C01005E1210 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C925A9EF14E39C01005E1210 /* TimelineControlSampleApp-Info.plist */,
+				C925A9F014E39C01005E1210 /* InfoPlist.strings */,
+				C925A9F314E39C01005E1210 /* main.m */,
+				C925A9F514E39C01005E1210 /* TimelineControlSampleApp-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C925A9E214E39C01005E1210 /* TimelineControlSampleApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C925AA0414E39C01005E1210 /* Build configuration list for PBXNativeTarget "TimelineControlSampleApp" */;
+			buildPhases = (
+				C925A9DF14E39C01005E1210 /* Sources */,
+				C925A9E014E39C01005E1210 /* Frameworks */,
+				C925A9E114E39C01005E1210 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TimelineControlSampleApp;
+			productName = TimelineControlSampleApp;
+			productReference = C925A9E314E39C01005E1210 /* TimelineControlSampleApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C925A9DA14E39C01005E1210 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "Matt Gillingham";
+			};
+			buildConfigurationList = C925A9DD14E39C01005E1210 /* Build configuration list for PBXProject "TimelineControlSampleApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C925A9D814E39C01005E1210;
+			productRefGroup = C925A9E414E39C01005E1210 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C925A9E214E39C01005E1210 /* TimelineControlSampleApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C925A9E114E39C01005E1210 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C925A9F214E39C01005E1210 /* InfoPlist.strings in Resources */,
+				C925A9FE14E39C01005E1210 /* ViewController_iPhone.xib in Resources */,
+				C925AA0114E39C01005E1210 /* ViewController_iPad.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C925A9DF14E39C01005E1210 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C925A9F414E39C01005E1210 /* main.m in Sources */,
+				C925A9F814E39C01005E1210 /* AppDelegate.m in Sources */,
+				C925A9FB14E39C01005E1210 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C925A9F014E39C01005E1210 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C925A9F114E39C01005E1210 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C925A9FC14E39C01005E1210 /* ViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C925A9FD14E39C01005E1210 /* en */,
+			);
+			name = ViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		C925A9FF14E39C01005E1210 /* ViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C925AA0014E39C01005E1210 /* en */,
+			);
+			name = ViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C925AA0214E39C01005E1210 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C925AA0314E39C01005E1210 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C925AA0514E39C01005E1210 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TimelineControlSampleApp/TimelineControlSampleApp-Prefix.pch";
+				INFOPLIST_FILE = "TimelineControlSampleApp/TimelineControlSampleApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/**";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C925AA0614E39C01005E1210 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TimelineControlSampleApp/TimelineControlSampleApp-Prefix.pch";
+				INFOPLIST_FILE = "TimelineControlSampleApp/TimelineControlSampleApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/**";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C925A9DD14E39C01005E1210 /* Build configuration list for PBXProject "TimelineControlSampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C925AA0214E39C01005E1210 /* Debug */,
+				C925AA0314E39C01005E1210 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C925AA0414E39C01005E1210 /* Build configuration list for PBXNativeTarget "TimelineControlSampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C925AA0514E39C01005E1210 /* Debug */,
+				C925AA0614E39C01005E1210 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C925A9DA14E39C01005E1210 /* Project object */;
+}

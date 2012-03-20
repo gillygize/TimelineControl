@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'TimeLineControl' target in the 'TimeLineControl' project
+//
+
+#ifdef __OBJC__
+  #import <Foundation/Foundation.h>
+#endif
