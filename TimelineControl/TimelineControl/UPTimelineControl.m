@@ -12,7 +12,7 @@
 #import "UPTimelineControl.h"
 #import "UPTimelineMinuteView.h"
 
-#define kRecommendedWidthPerMinute 200.0f
+#define kRecommendedWidthPerMinute 400.0f
 
 static inline NSUInteger minutesFromDuration(CMTime duration) {
   return (NSInteger) floor(CMTimeGetSeconds(duration) / 60.0);
@@ -458,7 +458,7 @@ static inline CMTime timeFromCoordinate(CGFloat coordinate, CGFloat widthForOneM
       _widthPerMinute =  MAX(
         MIN(
           startingWidthPerMinute * recognizer.scale,
-          3.0 * 60.0f / CMTimeGetSeconds(self.playerItem.duration) * self.bounds.size.width
+          30.0 * 60.0f / CMTimeGetSeconds(self.playerItem.duration) * self.bounds.size.width
         ),
         60.0f / CMTimeGetSeconds(self.playerItem.duration) * self.bounds.size.width
       );
@@ -470,7 +470,7 @@ static inline CMTime timeFromCoordinate(CGFloat coordinate, CGFloat widthForOneM
       _widthPerMinute =  MAX(
         MIN(
           startingWidthPerMinute * recognizer.scale,
-          3.0 * 60.0f / CMTimeGetSeconds(self.playerItem.duration) * self.bounds.size.width
+          30.0 * 60.0f / CMTimeGetSeconds(self.playerItem.duration) * self.bounds.size.width
         ),
         60.0f / CMTimeGetSeconds(self.playerItem.duration) * self.bounds.size.width
       );

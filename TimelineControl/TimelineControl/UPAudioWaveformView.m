@@ -15,13 +15,22 @@
 
 @implementation UPAudioWaveformView
 
++ layerClass
+{
+  return [CATiledLayer class];
+}
+
 - (id)initWithFrame:(CGRect)frame playerItem:(AVPlayerItem*)playerItem {
   if (self = [super initWithFrame:frame]){
     audioData = [[NSMutableData alloc] init];
 
     [self loadAudioData:playerItem];
     sampleCount = audioData.length / 2;
-    self.backgroundColor = [UIColor clearColor];
+    self.backgroundColor = [UIColor clearColor];    
+    
+    CATiledLayer *tiledLayer = (CATiledLayer*)self.layer;
+    tiledLayer.tileSize = CGSizeMake(512.0, 512.0);
+
   }
   return self;
 }
@@ -32,14 +41,16 @@
 }
 
 - (void)drawRect:(CGRect)rect {
-  CGContextRef context = UIGraphicsGetCurrentContext();
+}
+
+- (void)drawLayer:(CALayer *)layer inContext:(CGContextRef)ctx {
   SInt16 *samples = (SInt16 *) audioData.bytes;
 
-  CGContextSetAlpha(context, 0.3f);
-  CGContextSetLineWidth(context, 1.0);
+  CGContextSetAlpha(ctx, 0.3f);
+  CGContextSetLineWidth(ctx, 1.0);
 
-  CGFloat halfGraphHeight = (rect.size.height / 2);
-  CGFloat sampleAdjustmentFactor = (rect.size.height / (CGFloat) channelCount) / (CGFloat) normalizeMax;
+  CGFloat halfGraphHeight = (self.bounds.size.height / 2);
+  CGFloat sampleAdjustmentFactor = (self.bounds.size.height / (CGFloat) channelCount) / (CGFloat) normalizeMax;
 
   for (NSInteger intSample = 0; intSample < sampleCount; intSample++) {
     SInt16 sample = *samples++;
@@ -47,12 +58,12 @@
     CGFloat pixels = sample * sampleAdjustmentFactor;
         
     CGFloat samplePercent = (intSample * 1.0f) / sampleCount;
-    CGFloat xPosition = rect.size.width * samplePercent;
+    CGFloat xPosition = self.bounds.size.width * samplePercent;
                 
-    CGContextMoveToPoint(context, xPosition, halfGraphHeight-pixels);
-    CGContextAddLineToPoint(context, xPosition, halfGraphHeight+pixels);
-    CGContextSetStrokeColorWithColor(context, [[UIColor blackColor] CGColor]);
-    CGContextStrokePath(context);
+    CGContextMoveToPoint(ctx, xPosition, halfGraphHeight-pixels);
+    CGContextAddLineToPoint(ctx, xPosition, halfGraphHeight+pixels);
+    CGContextSetStrokeColorWithColor(ctx, [[UIColor blackColor] CGColor]);
+    CGContextStrokePath(ctx);
   }
 }
 
