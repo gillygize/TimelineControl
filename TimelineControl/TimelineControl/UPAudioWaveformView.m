@@ -68,7 +68,7 @@
 }
 
 - (void)loadAudioData:(AVPlayerItem *)playerItem {
-  NSError * error = nil;
+  NSError *error = nil;
 
   AVAssetReader *reader = [[AVAssetReader alloc] initWithAsset:playerItem.asset error:&error];
   AVAssetTrack *songTrack = [playerItem.asset.tracks objectAtIndex:0];
