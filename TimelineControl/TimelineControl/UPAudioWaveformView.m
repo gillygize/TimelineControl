@@ -46,8 +46,8 @@
 - (void)drawLayer:(CALayer *)layer inContext:(CGContextRef)ctx {
   SInt16 *samples = (SInt16 *) audioData.bytes;
 
-  CGContextSetAlpha(ctx, 0.3f);
-  CGContextSetLineWidth(ctx, 1.0);
+  CGContextSetAlpha(ctx, 1.0f);
+  CGContextSetLineWidth(ctx, 2.0);
 
   CGFloat halfGraphHeight = (self.bounds.size.height / 2);
   CGFloat sampleAdjustmentFactor = (self.bounds.size.height / (CGFloat) channelCount) / (CGFloat) normalizeMax;

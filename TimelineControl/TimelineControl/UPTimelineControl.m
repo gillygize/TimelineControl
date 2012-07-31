@@ -12,7 +12,7 @@
 #import "UPTimelineControl.h"
 #import "UPTimelineMinuteView.h"
 
-#define kRecommendedWidthPerMinute 400.0f
+#define kRecommendedWidthPerMinute 1000.0f
 
 static inline NSUInteger minutesFromDuration(CMTime duration) {
   return (NSInteger) floor(CMTimeGetSeconds(duration) / 60.0);
@@ -509,7 +509,7 @@ static inline CMTime timeFromCoordinate(CGFloat coordinate, CGFloat widthForOneM
     [scrollView sendSubviewToBack:lastMinuteView];
   }
 
-  scrollView.contentSize = CGSizeMake(_widthPerMinute * minutes + remainingWidth, 56.0f);
+  scrollView.contentSize = CGSizeMake(_widthPerMinute * minutes + remainingWidth, self.bounds.size.height);
 }
 
 -(UPTimelineMinuteView*)minuteViewWithMinute:(NSUInteger)currentMinute width:(CGFloat)width {
@@ -518,13 +518,13 @@ static inline CMTime timeFromCoordinate(CGFloat coordinate, CGFloat widthForOneM
   if (nil == minuteView) {
     minuteView = [[[UPTimelineMinuteView alloc]
       initWithMinute:currentMinute
-      size:CGSizeMake(width, 56.0f)
+      size:CGSizeMake(width, self.bounds.size.height)
       widthPerMinute:_widthPerMinute] autorelease];
         
     minuteView.backgroundColor = [UIColor clearColor];
     minuteView.tag = currentMinute + 1;
   } else {
-    [minuteView updateWithSize:CGSizeMake(width, 56.0f) widthPerMinute:_widthPerMinute];
+    [minuteView updateWithSize:CGSizeMake(width, self.bounds.size.height) widthPerMinute:_widthPerMinute];
   }
 
   return minuteView;
